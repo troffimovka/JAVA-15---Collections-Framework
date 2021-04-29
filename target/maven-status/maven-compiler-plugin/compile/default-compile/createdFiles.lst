@@ -1,0 +1,5 @@
+repository\LabelRepository.class
+domain\Label.class
+repository\IssueRepository.class
+domain\Issue.class
+manager\IssueManager.class
