@@ -13,9 +13,6 @@ import java.util.*;
 @AllArgsConstructor
 
 public class Issue implements Comparable<Issue>{
-    //можно ли в Data class вызывать объекты из main?
-    //как определить две разных даты время заведения issue и время его обновления?
-    //Date date = new Date();
     private Calendar date = new GregorianCalendar();
 
     private int id;
