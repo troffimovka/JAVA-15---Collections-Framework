@@ -114,12 +114,4 @@ class IssueManagerTest {
         Issue[] actual = manager.findByAssignee("junit-buildmaster").toArray(new Issue[0]);
         assertArrayEquals(expected, actual);
     }
-
-    @Test
-    void findByLabel() {
-    }
-
-    @Test
-    void findByAssignee() {
-    }
 }
