@@ -43,11 +43,12 @@ public class Issue implements Comparable<Issue>{
     private int numberOfReact;
 
     @Override
-    public int compareTo(Issue o)
-    {
+    public int compareTo(Issue o) {
         if (o.date.getTimeInMillis() > this.date.getTimeInMillis())
             return -1;
-        else
+        else {
             return 1;
+        }
+
     }
 }
