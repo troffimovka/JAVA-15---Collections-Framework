@@ -24,10 +24,6 @@ public class IssueRepository {
            return issues;
        }
 
-    public void findAllOpened() {
-           issues.removeIf(i -> !i.isOpen());
-    }
-
     public void findAllClosed() {
         issues.removeIf(Issue::isOpen);
     }
@@ -39,10 +35,6 @@ public class IssueRepository {
     public void findByAuthor(String author) {
         issues.removeIf(i -> !i.getAuthor().equals(author));
     }
-
-   // public void findByLabel(String label) {
-     //   issues.removeIf(i -> i.getLabel() != label);
-    //}
 
     public void findByAssignee(String assignee) {
         issues.removeIf(i -> !i.getAssignee().equals(assignee));
