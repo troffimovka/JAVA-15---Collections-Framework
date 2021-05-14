@@ -132,8 +132,6 @@ public class Manager {
         Issue newIssue = getById(id);
         if (newIssue.isClosedIssue() == false) {
             newIssue.setClosedIssue(true);
-            repository.removeByID(id);
-            repository.save(newIssue);
         } else {
             System.out.println("This issue is already closed");
         }
