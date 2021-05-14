@@ -6,7 +6,6 @@ import ru.netology.domain.Issue;
 
 import java.util.Comparator;
 
-@NoArgsConstructor
 @Data
 public class ComparatorByCreationDate implements Comparator<Issue> {
 
