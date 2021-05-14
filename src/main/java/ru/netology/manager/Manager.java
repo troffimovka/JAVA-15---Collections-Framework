@@ -52,7 +52,7 @@ public class Manager {
     public Collection<Issue> showClosedIssues() {
         Collection<Issue> closed = new ArrayList<>();
         for (Issue item : getAll()) {
-            if (item.isClosedIssue() == true) {
+            if (item.isClosedIssue()) {
                 closed.add(item);
             }
         }
