@@ -41,7 +41,7 @@ public class Manager {
     public Collection<Issue> showOpenIssues() {
         Collection<Issue> opened = new ArrayList<>();
         for (Issue item : getAll()) {
-            if (item.isClosedIssue() == false) {
+           if (!item.isClosedIssue()) {
                 opened.add(item);
             }
         }
