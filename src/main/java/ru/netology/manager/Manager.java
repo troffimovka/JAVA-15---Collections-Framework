@@ -60,7 +60,7 @@ public class Manager {
     }
 
     // 3. Обязательная функция: Фильтрация по имени Автора
-    public Collection<Issue> filterByAuthor(Predicate<Set> author) {
+    public Collection<Issue> filterByAuthor(Predicate<Set<String>> author) {
         Collection<Issue> filteredByAuthor = new ArrayList<>();
         for (Issue item : getAll()) {
             if (author.test(item.getAuthor())) {
@@ -71,7 +71,7 @@ public class Manager {
     }
 
     // 3. Обязательная функция: Фильтрация по Assignee
-    public Collection<Issue> filterByAssignee(Predicate<Set> assignee) {
+    public Collection<Issue> filterByAssignee(Predicate<Set<String>> assignee) {
         Collection<Issue> filteredByAssignee = new ArrayList<>();
         for (Issue item : getAll()) {
             if (assignee.test(item.getAssignee())) {
@@ -82,7 +82,7 @@ public class Manager {
     }
 
     // 3. Обязательная функция: Фильтрация по тегу
-    public Collection<Issue> filterByLabel(Predicate<Set> label) {
+    public Collection<Issue> filterByLabel(Predicate<Set<String>> label) {
         Collection<Issue> filteredByLabel = new ArrayList<>();
         for (Issue item : getAll()) {
             if (label.test(item.getLabel())) {
